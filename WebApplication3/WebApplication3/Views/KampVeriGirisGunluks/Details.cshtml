@@ -1,0 +1,42 @@
+﻿@model WebApplication3.Models.KampVeriGirisGunluk
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>KampVeriGirisGunluk</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PoliklinikSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PoliklinikSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HastaneSevkSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HastaneSevkSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VeriGirisTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VeriGirisTarihi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

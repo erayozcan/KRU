@@ -1,0 +1,50 @@
+﻿@model WebApplication3.Models.Il
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Il</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IlAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IlAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToplamPoliklinik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToplamPoliklinik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToplamHastaneSevkSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToplamHastaneSevkSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IptalMi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IptalMi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

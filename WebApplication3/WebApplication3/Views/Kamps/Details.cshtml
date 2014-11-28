@@ -1,0 +1,66 @@
+﻿@model WebApplication3.Models.Kamp
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Kamp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KampAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KampAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IptalMi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IptalMi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AcilisTarihi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AcilisTarihi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToplamPoliklinikSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToplamPoliklinikSayisi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToplamHastaneSevkSayisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToplamHastaneSevkSayisi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
